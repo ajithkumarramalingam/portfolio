@@ -1,0 +1,60 @@
+/* navbar */
+body .cust-nav {
+  padding: 0px;
+}
+.nav-text .color-text {
+  font-size: 20px;
+  color: black !important;
+}
+.nav-text .color-text:hover{
+  color:  rgb(203, 230, 84) !important; 
+  text-decoration: underline;
+}
+.back-img {
+  background-image: url(img_1.jpg);
+  width: 100%;
+  background-position: center;
+  height: 950px;
+}
+/* background-image and text  */
+.name-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.human-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.human-img img {
+  width: 300px;
+  height: 500px;
+}
+.back-img .text-img {
+  margin: 0px;
+}
+.text-1 {
+  font-size: 70px;
+  color: white;
+}
+.text-img {
+  margin-top: 150px !important;
+}
+.content h5 {
+  color: rgb(203, 230, 84);
+}
+.name-text i {
+  color: white;
+  width: 70px;
+}
+/* about-session */
+.about-session{
+  text-align: center;
+  padding-top: 80px;
+}
+/* about-session h1 */
+.about-session h1{
+  font-size: 100px;
+}
+
