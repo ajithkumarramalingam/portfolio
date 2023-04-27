@@ -1,3 +1,6 @@
+body {
+  background-color: floralwhite !important;
+}
 /* navbar */
 body .cust-nav {
   padding: 0px;
@@ -6,8 +9,8 @@ body .cust-nav {
   font-size: 20px;
   color: black !important;
 }
-.nav-text .color-text:hover{
-  color:  rgb(203, 230, 84) !important; 
+.nav-text .color-text:hover {
+  color: rgb(203, 230, 84) !important;
   text-decoration: underline;
 }
 .back-img {
@@ -49,12 +52,43 @@ body .cust-nav {
   width: 70px;
 }
 /* about-session */
-.about-session{
+.heading {
   text-align: center;
   padding-top: 80px;
 }
 /* about-session h1 */
-.about-session h1{
-  font-size: 100px;
+.heading h1 {
+  font-size: 55px;
 }
-
+/* Education Details */
+.edu-details {
+  background-color: rgb(203, 230, 84);
+}
+.edu-butn {
+  background-color: rgb(235, 234, 234);
+}
+/* span */
+.study span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.size {
+  height: 110px;
+  text-align: center;
+}
+.edu-butn .study {
+  margin: 20px;
+}
+.study .size {
+  background-color: floralwhite !important ;
+}
+/* skills */
+.skills-icon img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.skills-icon p {
+  text-align: center;
+}
