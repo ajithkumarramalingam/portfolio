@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <!-- css-link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap-link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- font-awesome-link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,18 +23,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos-animation-link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navbar -->
-    <div class="back-img">
-      <nav class="cust-nav navbar navbar-expand-lg navbar-light">
-        <div
-          class="nav-text collapse navbar-collapse justify-content-end"
-          id="navbarNav"
+    <div class="back-img" id="1">
+      <nav class="container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">AK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-text collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="color-text nav-link" href="#1">Home</a>
+            <li class="nav-item">
+              <a
+                class="color-text nav-link active"
+                aria-current="page"
+                href="#1"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="color-text nav-link" href="#2">About</a>
@@ -39,27 +67,48 @@
               <a class="color-text nav-link" href="#3">Education</a>
             </li>
             <li class="nav-item">
-              <a class="color-text nav-link" href="#4">Skills</a>
+              <a class="color-text nav-link" href="#4">Project</a>
             </li>
             <li class="nav-item">
-              <a class="color-text nav-link" href="#">Contact</a>
+              <a class="color-text nav-link" href="#5">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="color-text nav-link" href="#6">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <!-- background-image and text -->
-      <div class="text-img row" id="1">
-        <div class="name-text col-6">
+      <div class="text-img row">
+        <div
+          class="name-text col-6"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          >
           <div class="content">
-            <h3 class="text-1">HI!</h3>
-            <h3 class="text-1">I am Ajith Kumar</h3>
+            <h3 class="text-1">Hi..!</h3>
+            <h3 class="text-1">I'am Ajith Kumar</h3>
             <h5>SOFTWARE DEVELOPER</h5>
-            <a href=""><i class="fa-brands fa-linkedin fa-3x"></i></a>
-            <a href=""><i class="fa-brands fa-square-twitter fa-3x"></i></a>
-            <a href=""><i class="fa-brands fa-square-github fa-3x"></i></a>
+            <p>"The only way to do great work is to love what you do."</p>
+            <div class="row">
+              <div class="col">
+                <a href=""><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+                <a href=""><i class="fa-brands fa-square-github fa-3x"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="human-img col-6">
+        <!-- human-image -->
+
+        <div
+          class="human-img col-6"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <img src="human.png" alt="" />
         </div>
       </div>
@@ -97,55 +146,226 @@
         <div class="edu-butn row">
           <div class="study col">
             <div class="p-4 border bg-light size">
-              <span>SSLC:2015-2016</span>
+              <span>SSLC:</span>
+              <p>2015-2016</p>
               <p>SKSDS Hr.Sec.School, Thiruppanandal.</p>
+              <p class="percentage">88%</p>
             </div>
           </div>
           <div class="study col">
             <div class="p-4 border bg-light size">
-              <span>HSC:2017-2018</span>
+              <span>HSC:</span>
+              <p>2017-2018</p>
               <p>SKSDS Hr.Sec.School, Thiruppanandal.</p>
+              <p class="percentage">73%</p>
             </div>
           </div>
           <div class="study col">
             <div class="p-4 border bg-light size">
-              <span>BE.,Mechatronics:2018-2022</span>
+              <span>BE.,Mechatronics:</span>
+              <p>2018-2022</p>
               <p>Mahendra Engineering College, Namakkal.</p>
+              <p class="percentage">89%</p>
             </div>
           </div>
         </div>
       </div>
+      <!-- project session -->
+      <div
+        class="skills-session heading w3-container w3-center w3-animate-bottom"
+        id="4"
+      >
+        <h1>PROJECT</h1>
+      </div>
+
       <!-- Skills session -->
-      <div class="skills-session heading" id="4">
+      <div class="skills-session heading" id="5">
         <h1>SKILLS</h1>
       </div>
-      <div class="row">
-        <div class="col-6 skills-icon">
-          <!-- <i class="fa-brands fa-java fa-5x"></i> -->
-          <img src="icons8-java.svg" alt="">
-          <p>JAVA</p>
+      <div class="row skill-cards">
+        <div class="col-6 skills-icon card j-color" data-aos="flip-left">
+          <i class="fa-brands fa-java fa-6x java"></i>
+          <p class="sub-head">JAVA</p>
+          <p>
+            Java is a high-level, object-oriented programming language used for
+            developing web and mobile applications, as well as enterprise
+            software. Its "write once, run anywhere" philosophy makes it highly
+            portable. Java's strong memory management and garbage collection
+            make it easy to develop stable software quickly. It has a rich set
+            of libraries and frameworks, and is widely used in industries such
+            as finance, healthcare, and education.
+          </p>
         </div>
-        <div class="col-6 skills-icon">
-          <!-- <i class="fa-brands fa-python fa-5x"></i> -->
-          <!-- <img src="sql-server.png" alt=""> -->
-          <p>PYTHON</p>
+
+        <div class="col-6 skills-icon card js-color" data-aos="flip-right">
+          <i class="fa-brands fa-js fa-6x javascript"></i>
+          <p class="sub-head">JAVASCRIPT</p>
+          <p>
+            JavaScript is a high-level, dynamic programming language used mainly
+            for web development. It is a client-side scripting language that is
+            embedded within HTML. JavaScript allows developers to create
+            interactive web pages and dynamic user interfaces. It has a wide
+            range of frameworks and libraries, making it a popular choice for
+            front-end web development. JavaScript is also increasingly used for
+            server-side programming with the rise of Node.js.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 skills-icon">
-          <!-- <i class="fa-solid fa-database fa-5x"></i> -->
-          <p>DATABASE</p>
+      <div class="row skill-cards">
+        <div class="col-6 skills-icon card n-color" data-aos="flip-left">
+          <i class="fa-brands fa-node fa-6x node"></i>
+          <p class="sub-head">NODE</p>
+          <p>
+            Node.js is a cross-platform, open-source JavaScript runtime
+            environment that enables server-side programming. It provides an
+            event-driven, non-blocking I/O model that is highly scalable and
+            efficient. Node.js is widely used for building real-time web
+            applications, APIs, and microservices, and has a large and active
+            community that contributes to a vast ecosystem of libraries and
+            tools.
+          </p>
         </div>
-        <div class="col-6 skills-icon">
-          <!-- <i class="fa-brands fa-square-js fa-5x"></i> -->
-          <p>JAVASCRIPT</p>
+        <div class="col-6 skills-icon card a-color" data-aos="flip-right">
+          <i class="fa-brands fa-angular fa-6x angular"></i>
+          <p class="sub-head">ANGULAR</p>
+          <p>
+            Angular is an open-source front-end web application framework based
+            on TypeScript. It provides a set of tools and features for building
+            dynamic and single-page applications. Angular is maintained by
+            Google and has a large community that contributes to its growth and
+            development. It is used by many companies to build scalable and
+            efficient web applications.
+          </p>
+        </div>
+      </div>
+      <div class="row skill-cards">
+        <div class="col-6 skills-icon card h-color" data-aos="flip-left">
+          <i class="fa-brands fa-html5 fa-6x html"></i>
+          <p class="sub-head">HTML</p>
+          <p>
+            HTML (Hypertext Markup Language) is a markup language used to create
+            the structure and content of web pages. It uses tags to define
+            different elements and their properties, such as headings,
+            paragraphs, images, and links. HTML is essential for web
+            development, providing a standardized way to create and organize
+            content for the web. It is constantly evolving, with new features
+            and updates being introduced to support modern web development
+            practices. HTML is a fundamental skill for anyone interested in web
+            development or design.
+          </p>
+        </div>
+        <div class="col-6 skills-icon card c-color" data-aos="flip-right">
+          <i class="fa-brands fa-css3-alt fa-6x css"></i>
+          <p class="sub-head">CSS</p>
+          <p>
+            CSS (Cascading Style Sheets) is a style sheet language used to
+            describe the presentation of web pages. It separates the content
+            from the presentation, allowing developers to change the visual
+            appearance of a site without affecting its underlying structure. CSS
+            provides a wide range of styling options, including layout,
+            typography, and color, making it a crucial tool for modern web
+            design. It is constantly evolving, with new features and updates
+            being introduced to support the latest web design trends and
+            techniques.
+          </p>
+        </div>
+      </div>
+      <div class="row skill-cards">
+        <div class="col-6 skills-icon card d-color" data-aos="flip-left">
+          <i class="fa-solid fa-database fa-6x database"></i>
+          <p class="sub-head">MY SQL</p>
+          <p>
+            MySQL is a powerful open-source relational database management
+            system that allows users to store, organize, and access data.
+            Developed by Oracle Corporation, MySQL is widely used by web
+            developers and software engineers to build robust and scalable
+            applications. MySQL supports various programming languages, making
+            it a popular choice for cross-platform development. With features
+            such as transactional processing and ACID compliance, MySQL ensures
+            data integrity and consistency.
+          </p>
+        </div>
+        <div class="col-6 skills-icon card g-color" data-aos="flip-right">
+          <i class="fa-brands fa-github fa-6x github"></i>
+          <p class="sub-head">GITHUB</p>
+          <p>
+            freeCodeCamp - a non-profit organization that provides free coding
+            education to anyone who wants to learn. Their curriculum covers
+            everything from HTML and CSS to full-stack development and data
+            science.It's widely used by researchers, developers, and businesses
+            for tasks like image and speech recognition, natural language
+            processing, and predictive analytics.
+          </p>
         </div>
       </div>
     </div>
+    <!-- contact -->
+    <div class="contact-session heading" id="6">
+      <p>How can you communicate?</p>
+      <h1>CONTACT US</h1>
+    </div>
+    <div class="contact-details">
+      <div class="container">
+        <form>
+          <div class="details">
+          <div class="row">
+          
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control"
+                  placeholder="Your Name*"
+                />
+              </div>
+              
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label"
+                  >Your Email</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control"
+                  placeholder="Your Email*"
+                />
+              </div>
+            </div>
+
+            <div class="col-6 mb-3">
+              <label for="disabledTextInput" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="6"
+                placeholder="Write Something*"
+              ></textarea>
+
+          </div>
+          </div>
+          </div>
+       
+        </form>
+        <div class="submit-butn">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </div>
+      </div>
+      
+    <!-- aos-script-link -->
+    <script>
+      AOS.init();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    \
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
 </html>
