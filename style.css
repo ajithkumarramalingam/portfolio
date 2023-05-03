@@ -1,6 +1,10 @@
+html {
+  overflow-x: hidden;
+}
 /* navbar */
 * {
   font-family: "EB Garamond", serif;
+  font-size: 20px;
 }
 .nav-text {
   justify-content: end;
@@ -11,9 +15,23 @@
   color: black !important;
 }
 .nav-text .color-text:hover {
-  color: yellow !important;
-  text-decoration: underline;
+  color: white !important;
+  /* text-decoration: underline; */
+  background-color: teal;
+  border-radius: 10px;
 }
+/* portfolio */
+.back-img span {
+  font-size: 40px;
+  color: red;
+}
+.back-img .port {
+  font-size: 35px;
+}
+/* .nav-text a {
+  background-color: teal;
+  border-radius: 10px;
+} */
 .back-img {
   background-image: url(img_1.jpg);
   width: 100%;
@@ -56,6 +74,23 @@
   width: 70px;
 }
 /* about-session */
+.demo {
+  justify-content: center;
+}
+.demo .rough {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.demo .rough p {
+  width: 100%;
+  margin: 0px;
+  border: 2px solid black;
+  margin-right: 20px;
+}
+.demo .rough .test {
+  margin-left: 20px;
+}
 .heading {
   text-align: center;
   padding-top: 80px;
@@ -63,15 +98,18 @@
 /* about-session h1 */
 .heading h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* Education Details */
 .edu-details {
   background-color: rgb(203, 230, 84);
 }
 .edu-butn {
-  background-color: mistyrose;
+  background-color: #e9ecef;
 }
-/* span */
 .study span {
   font-weight: bold;
   text-decoration: underline;
@@ -88,17 +126,21 @@
   color: white;
 }
 .size {
-  height: 200px;
+  /* height: 230px; */
   text-align: center;
   box-shadow: 5px 10px darkcyan;
 }
 .edu-butn .study {
   margin: 20px;
 }
-/* .study .size {
-  background-color: floralwhite !important ;
-} */
 /* skills */
+.skills-icon {
+  padding: 35px !important;
+
+}
+.skills-icon p {
+  text-align: justify;
+}
 .skills-icon .sub-head {
   text-decoration: underline;
   font-weight: bold;
@@ -134,7 +176,7 @@
   color: #f29111;
 }
 .skill-cards {
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 30px;
 }
 .skill-cards .skills-icon {
@@ -178,5 +220,42 @@
 .submit-butn {
   display: flex;
   justify-content: center;
+}
+.details input {
+  height: 55px;
+}
+.details textarea {
+  height: 168px;
+}
+/* bottom */
+.bottom {
+  background-color: powderblue;
+}
+.bottom .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy p {
+  margin-bottom: 0px;
+}
+.bottom .icon {
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+}
+.bottom .b-butn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b-butn a {
+  color: black;
+}
+.icon a {
+  color: black;
+}
+.submit-butn button {
+  background-color: #48b4e0;
 }
 
