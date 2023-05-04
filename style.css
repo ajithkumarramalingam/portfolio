@@ -16,7 +16,6 @@ html {
 }
 .nav-text .color-text:hover {
   color: white !important;
-  /* text-decoration: underline; */
   background-color: teal;
   border-radius: 10px;
 }
@@ -28,15 +27,15 @@ html {
 .back-img .port {
   font-size: 35px;
 }
-/* .nav-text a {
-  background-color: teal;
-  border-radius: 10px;
-} */
 .back-img {
   background-image: url(img_1.jpg);
   width: 100%;
   background-position: center;
   height: 950px;
+  background-repeat:no-repeat ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 /* background-image and text  */
 .name-text {
@@ -61,7 +60,8 @@ html {
   color: white;
 }
 .text-img {
-  margin-top: 150px !important;
+  /* margin-top: 150px !important; */
+  /* align-items: center !important; */
 }
 .content h5 {
   color: yellow;
@@ -73,6 +73,19 @@ html {
   color: white;
   width: 70px;
 }
+.content .cv-butn {
+  background-color: yellow;
+  margin-top: 20px;
+}
+.cv-butn i {
+  color: black;
+}
+/* .cv-butn .arrow:hover {
+  color: #6cc644;
+}
+.cv-butn .arrow {
+  color: royalblue;
+} */
 /* about-session */
 .demo {
   justify-content: center;
@@ -136,7 +149,6 @@ html {
 /* skills */
 .skills-icon {
   padding: 35px !important;
-
 }
 .skills-icon p {
   text-align: justify;
@@ -175,12 +187,15 @@ html {
 .skills-icon .database {
   color: #f29111;
 }
+.skills-icon .bootstrap {
+  color: purple;
+}
 .skill-cards {
   justify-content: space-around;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .skill-cards .skills-icon {
-  width: 500px;
+  width: 320px;
 }
 .js-color {
   border-color: #f0db4f !important;
@@ -205,6 +220,9 @@ html {
 }
 .a-color {
   border-color: #a6120d !important;
+}
+.b-color {
+  border-color: purple !important;
 }
 /* contact */
 .contact-details {
@@ -251,11 +269,85 @@ html {
 }
 .b-butn a {
   color: black;
+  border: 1px solid black;
+  border-radius: 26px;
 }
-.icon a {
-  color: black;
+.b-butn a:hover {
+  background-color: teal;
+  color: white;
 }
 .submit-butn button {
   background-color: #48b4e0;
 }
 
+/* media query */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+.back-img {
+  width: 334px;
+}
+
+  
+}

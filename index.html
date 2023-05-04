@@ -36,76 +36,77 @@
   </head>
   <body>
     <!-- navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><span>P</span>ortfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="nav-text collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#1"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#2"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#3"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#4"
+              >Project</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#5"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="color-text nav-link active"
+              aria-current="page"
+              href="#6"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="back-img" id="1">
-      <nav class="container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><span>P</span>ortfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="nav-text collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#1"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#2"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#3"
-                >Education</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#4"
-                >Project</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#5"
-                >Skills</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="color-text nav-link active"
-                aria-current="page"
-                href="#6"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+     
       <!-- background-image and text -->
       <div class="text-img row">
         <div
@@ -114,21 +115,22 @@
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
         >
-          >
           <div class="content">
             <h3 class="text-1">Hi..!</h3>
-            <h3 class="text-1">I'am Ajith Kumar</h3>
+            <h3 class="text-1">I' am Ajith Kumar</h3>
             <h5>SOFTWARE DEVELOPER</h5>
             <p>"The only way to do great work is to love what you do."</p>
             <div class="row">
               <div class="col">
-                <a href=""><i class="fa-brands fa-linkedin fa-3x"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter fa-3x"></i></a>
-                <a href=""><i class="fa-brands fa-square-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/ajithkumar-ramalingam-786b25190"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                <a href="https://twitter.com/03_mct60800?t=WLC7bp0fns5OgbraVg-65w&s=09"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+                <a href="https://github.com/ajithkumarramalingam"><i class="fa-brands fa-square-github fa-3x"></i></a>
               </div>
             </div>
+            <button type="button" class="btn btn-warning cv-butn">Download CV<i class="fa-solid fa-download"></i></button>
           </div>
         </div>
+
         <!-- human-image -->
 
         <div
@@ -208,7 +210,7 @@
         </div>
       </div>
       <!-- project session -->
-      <div class="skills-session heading" id="4">
+      <!-- <div class="skills-session heading" id="4">
         <h1>PROJECT</h1>
         <div class="demo row">
           <div class="rough col-3">
@@ -217,7 +219,7 @@
             <p class="test"></p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Skills session -->
       <div class="skills-session heading" id="5">
@@ -231,10 +233,10 @@
         </div>
       </div>
       <div class="row skill-cards">
-        <div class="col-6 skills-icon card j-color" data-aos="flip-left">
+        <div class="col-4 skills-icon card j-color" data-aos="flip-left">
           <i class="fa-brands fa-java fa-6x java"></i>
           <p class="sub-head">JAVA</p>
-          <p>
+          <!-- <p>
             Java is a high-level, object-oriented programming language used for
             developing web and mobile applications, as well as enterprise
             software. Its "write once, run anywhere" philosophy makes it highly
@@ -242,13 +244,13 @@
             make it easy to develop stable software quickly. It has a rich set
             of libraries and frameworks, and is widely used in industries such
             as finance, healthcare, and education.
-          </p>
+          </p> -->
         </div>
 
-        <div class="col-6 skills-icon card js-color" data-aos="flip-right">
+        <div class="col-4 skills-icon card js-color" data-aos="flip-right">
           <i class="fa-brands fa-js fa-6x javascript"></i>
           <p class="sub-head">JAVASCRIPT</p>
-          <p>
+          <!-- <p>
             JavaScript is a high-level, dynamic programming language used mainly
             for web development. It is a client-side scripting language that is
             embedded within HTML. JavaScript allows developers to create
@@ -256,14 +258,13 @@
             range of frameworks and libraries, making it a popular choice for
             front-end web development. JavaScript is also increasingly used for
             server-side programming with the rise of Node.js.
-          </p>
+          </p> -->
         </div>
-      </div>
-      <div class="row skill-cards">
-        <div class="col-6 skills-icon card n-color" data-aos="flip-left">
+
+        <div class="col-4 skills-icon card n-color" data-aos="flip-left">
           <i class="fa-brands fa-node fa-6x node"></i>
           <p class="sub-head">NODE</p>
-          <p>
+          <!-- <p>
             Node.js is a cross-platform, open-source JavaScript runtime
             environment that enables server-side programming. It provides an
             event-driven, non-blocking I/O model that is highly scalable and
@@ -271,26 +272,26 @@
             applications, APIs, and microservices, and has a large and active
             community that contributes to a vast ecosystem of libraries and
             tools.
-          </p>
+          </p> -->
         </div>
-        <div class="col-6 skills-icon card a-color" data-aos="flip-right">
+      </div>
+      <div class="row skill-cards">
+        <div class="col-4 skills-icon card a-color" data-aos="flip-right">
           <i class="fa-brands fa-angular fa-6x angular"></i>
           <p class="sub-head">ANGULAR</p>
-          <p>
+          <!-- <p>
             Angular is an open-source front-end web application framework based
             on TypeScript. It provides a set of tools and features for building
             dynamic and single-page applications. Angular is maintained by
             Google and has a large community that contributes to its growth and
             development. It is used by many companies to build scalable and
             efficient web applications.
-          </p>
+          </p> -->
         </div>
-      </div>
-      <div class="row skill-cards">
-        <div class="col-6 skills-icon card h-color" data-aos="flip-left">
+        <div class="col-4 skills-icon card h-color" data-aos="flip-left">
           <i class="fa-brands fa-html5 fa-6x html"></i>
           <p class="sub-head">HTML</p>
-          <p>
+          <!-- <p>
             HTML (Hypertext Markup Language) is a markup language used to create
             the structure and content of web pages. It uses tags to define
             different elements and their properties, such as headings,
@@ -300,12 +301,12 @@
             and updates being introduced to support modern web development
             practices. HTML is a fundamental skill for anyone interested in web
             development or design.
-          </p>
+          </p> -->
         </div>
-        <div class="col-6 skills-icon card c-color" data-aos="flip-right">
+        <div class="col-4 skills-icon card c-color" data-aos="flip-right">
           <i class="fa-brands fa-css3-alt fa-6x css"></i>
           <p class="sub-head">CSS</p>
-          <p>
+          <!-- <p>
             CSS (Cascading Style Sheets) is a style sheet language used to
             describe the presentation of web pages. It separates the content
             from the presentation, allowing developers to change the visual
@@ -315,14 +316,15 @@
             design. It is constantly evolving, with new features and updates
             being introduced to support the latest web design trends and
             techniques.
-          </p>
+          </p> -->
         </div>
       </div>
+
       <div class="row skill-cards">
-        <div class="col-6 skills-icon card d-color" data-aos="flip-left">
+        <div class="col-4 skills-icon card d-color" data-aos="flip-left">
           <i class="fa-solid fa-database fa-6x database"></i>
           <p class="sub-head">MY SQL</p>
-          <p>
+          <!-- <p>
             MySQL is a powerful open-source relational database management
             system that allows users to store, organize, and access data.
             Developed by Oracle Corporation, MySQL is widely used by web
@@ -331,19 +333,31 @@
             it a popular choice for cross-platform development. With features
             such as transactional processing and ACID compliance, MySQL ensures
             data integrity and consistency.
-          </p>
+          </p> -->
         </div>
-        <div class="col-6 skills-icon card g-color" data-aos="flip-right">
+        <div class="col-4 skills-icon card g-color" data-aos="flip-right">
           <i class="fa-brands fa-github fa-6x github"></i>
           <p class="sub-head">GITHUB</p>
-          <p>
+          <!-- <p>
             freeCodeCamp - a non-profit organization that provides free coding
             education to anyone who wants to learn. Their curriculum covers
             everything from HTML and CSS to full-stack development and data
             science.It's widely used by researchers, developers, and businesses
             for tasks like image and speech recognition, natural language
             processing, and predictive analytics.
-          </p>
+          </p> -->
+        </div>
+        <div class="col-4 skills-icon card b-color" data-aos="flip-right">
+          <i class="fa-brands fa-bootstrap fa-6x bootstrap"></i>
+          <p class="sub-head">BOOTSTRAP</p>
+          <!-- <p>
+            freeCodeCamp - a non-profit organization that provides free coding
+            education to anyone who wants to learn. Their curriculum covers
+            everything from HTML and CSS to full-stack development and data
+            science.It's widely used by researchers, developers, and businesses
+            for tasks like image and speech recognition, natural language
+            processing, and predictive analytics.
+          </p> -->
         </div>
       </div>
     </div>
@@ -412,16 +426,13 @@
     <!-- bottom -->
     <div class="bottom">
       <div class="row">
-        <div class="copy col-4">
+        <div class="copy col-6">
           <p>Copyright © Your Website 2023</p>
         </div>
-        <div class="icon col-4">
-          <a href=""><i class="fa-brands fa-linkedin fa-1x"></i></a>
-          <a href=""><i class="fa-brands fa-square-twitter fa-1x"></i></a>
-          <a href=""><i class="fa-brands fa-square-github fa-1x"></i></a>
-        </div>
-        <div class="b-butn col-4">
-          <a class="nav-link" href="#1">Home</a>
+        <div class="b-butn col-6">
+          <a class="nav-link" href="#1"
+            >Top<i class="fa-sharp fa-solid fa-arrow-up"></i
+          ></a>
         </div>
       </div>
     </div>
