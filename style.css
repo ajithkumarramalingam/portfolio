@@ -389,7 +389,7 @@ html {
   }
   .back-img {
     /* width: 100%; */
-    width: 393px;
+    /* width: 393px; */
     height: 590px;
   }
   /* back-img-text */
@@ -422,6 +422,9 @@ html {
  .personal .man-img img {
   width: 250px;
   height: 250px;
+}
+.personal {
+  margin-top: 35px !important;
 }
 .p-text {
   order: 2;
@@ -467,7 +470,7 @@ html {
   }
   /* contact-back-img */
   .contact-details {
-    height: 300px;
+    height: 400px;
   }
   /* contact */
   .details input {
@@ -481,4 +484,9 @@ html {
     width: 100%;
     margin: 0px;
   }
+  .bottom .b-butn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 }
