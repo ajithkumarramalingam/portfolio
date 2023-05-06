@@ -2,8 +2,9 @@ html {
   overflow-x: hidden;
 }
 * {
-  font-family: "EB Garamond", serif;
+  /* font-family: "EB Garamond", serif; */
   font-size: 20px;
+  font-family: 'Itim', cursive;
 }
 /* navbar */
 .nav-home {
@@ -82,14 +83,6 @@ html {
 .info button {
   background-color: yellow;
 }
-/* .content .cv-butn {
-  background-color: yellow;
-  margin-top: 20px;
-  border-radius: 15px;
-}
-.cv-butn i {
-  color: black;
-} */
 /* about-session */
 .demo {
   justify-content: center;
@@ -114,8 +107,8 @@ html {
 }
 /* about-session h1 */
 .heading h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  /* font-size: 30px; */
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -136,6 +129,7 @@ html {
   border: 2px solid red;
   border-radius: 30px;
   box-shadow: 2px 2px 25px 10px red;
+  margin-top: 50px !important;
 }
 .info h4 {
   text-decoration: underline;
@@ -200,7 +194,7 @@ html {
   color: #e34c26;
 }
 .skills-icon .css {
-  color: #264de4;
+  color: steelblue;
 }
 .skills-icon .java {
   color: #5c77fc;
@@ -212,7 +206,7 @@ html {
   color: #3c873a;
 }
 .skills-icon .angular {
-  color: #a6120d;
+  color: darkolivegreen;
 }
 .skills-icon .github {
   color: #6cc644;
@@ -227,35 +221,41 @@ html {
   justify-content: space-around;
   padding-top: 50px;
 }
-/* .skill-cards .skills-icon {
-  width: 320px;
-} */
 .js-color {
   border-color: #f0db4f !important;
+  box-shadow: 0px 0px 15px 10px #f0db4f inset;
 }
 .j-color {
   border-color: #5c77fc !important;
+  box-shadow: 0px 0px 15px 10px #5c77fc inset;
 }
 .n-color {
   border-color: #3c873a !important;
+  box-shadow: 0px 0px 15px 10px #3c873a inset;
 }
 .h-color {
   border-color: #e34c26 !important;
+  box-shadow: 0px 0px 15px 10px #e34c26 inset;
 }
 .c-color {
-  border-color: #264de4 !important;
+  border-color: steelblue !important;
+  box-shadow: 0px 0px 15px 10px steelblue inset;
 }
 .g-color {
   border-color: #6cc644 !important;
+  box-shadow: 0px 0px 15px 10px #6cc644 inset;
 }
 .d-color {
   border-color: #f29111 !important;
+  box-shadow: 0px 0px 15px 10px #f29111 inset;
 }
 .a-color {
-  border-color: #a6120d !important;
+  border-color: darkolivegreen !important;
+  box-shadow: 0px 0px 15px 10px darkolivegreen inset;
 }
 .b-color {
   border-color: purple !important;
+  box-shadow: 0px 0px 15px 10px purple inset;
 }
 /* contact */
 .contact-details {
@@ -372,7 +372,7 @@ html {
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
   /* navbar */
-  html {
+   /* html {
     overflow-x: hidden !important;
   }
   .nav-home button {
@@ -382,44 +382,44 @@ html {
   .nav-home span {
     height: 30px;
     width: 25px;
-  }
+  } */
   /* background-image */
-  * {
+  /* * {
     font-size: 15px;
-  }
-  .back-img {
+  } */
+  /* .back-img { */
     /* width: 100%; */
     /* width: 393px; */
-    height: 590px;
-  }
+    /* height: 590px;
+  } */
   /* back-img-text */
-  .text-1 {
+  /* .text-1 {
     font-size: 30px;
   }
   .text-1 h5 {
     font-size: 20px;
-  }
+  } */
   /* social-media-icon */
-  .name-text i {
+  /* .name-text i {
     width: 47px;
-  }
+  } */
   /* human-img */
-  .human-img img {
+  /* .human-img img { */
     /* width: 135px; */
-    width: 100%;
+    /* width: 100%;
     height: 315px;
-  }
+  } */
   /* cv-button */
-  .content .cv-butn {
+  /* .content .cv-butn {
     width: 149px;
     height: 70px;
-  }
+  } */
   /* about */
-  .media {
+  /* .media {
     width: 80% !important;
-  }
+  } */
  /* personal-info */
- .personal .man-img img {
+ /* .personal .man-img img {
   width: 250px;
   height: 250px;
 }
@@ -435,9 +435,9 @@ html {
 }
 .info {
   padding: 15px;
-}
+} */
   /* heading */
-  .heading {
+  /* .heading {
     padding-top: 15px;
   }
   .heading h1 {
@@ -448,15 +448,15 @@ html {
     margin-bottom: 27px;
   }
   /* education */
-  .study span {
+  /* .study span {
     font-size: 16px;
   }
   .study .percentage {
     height: 45px;
     width: 45px;
-  }
+  }  */
   /* skills */
-  .skill-cards .col-lg-4 {
+  /* .skill-cards .col-lg-4 {
     width: 100% !important;
   }
   .skills-icon .sub-head {
@@ -467,20 +467,20 @@ html {
   }
   .skill-cards .media-pad {
     margin-top: 50px;
-  }
+  } */
   /* contact-back-img */
-  .contact-details {
+  /* .contact-details {
     height: 400px;
-  }
+  } */
   /* contact */
-  .details input {
+  /* .details input {
     height: 30px;
   }
   .details textarea {
     height: 104px;
-  }
+  } */
   /* bottom */
-  .bottom-text {
+  /* .bottom-text {
     width: 100%;
     margin: 0px;
   }
@@ -488,5 +488,124 @@ html {
     display: flex;
     justify-content: end;
     align-items: center;
-}
+}  */
+/* demo */
+html {	 
+   	overflow-x: hidden !important;
+   	}
+   	.nav-home button {
+   	height: 38px;
+   	width: 55px;
+   	}
+   	.nav-home span {
+   	height: 30px;
+   	width: 25px;
+   	}
+    	/* background-image */
+   	* {
+   	font-size: 15px;
+   	}
+   	.back-img {
+   	/* width: 100%; */
+    	height: 590px;
+   	}
+    	/* back-img-text */
+   	.text-1 {
+   	font-size: 30px;
+   	}
+   	.text-1 h5 {
+   	font-size: 20px;
+   	}
+   	/* social-media-icon */
+   	.name-text i {
+   	width: 47px;
+   	}
+   	/* human-img */
+   	.human-img img {
+   	/* width: 135px; */
+   	width: 100%;
+   	height: 315px;
+   	}
+   	/* cv-button */
+   	.content .cv-butn {
+   	width: 149px;
+   	height: 70px;
+   	}
+      	/* about */
+   	.media {
+   	width: 80% !important;
+   	}
+   	/* personal-info */
+   	.personal .man-img img {
+   	width: 250px;
+   	height: 250px;
+   	}
+   	.personal {
+   	margin-top: 35px !important;
+   	}
+   	.p-text {
+   	order: 2;
+   	}
+   	.man-img {
+   	order: 1;
+   	padding: 15px;
+   	}
+   	.info {
+   	padding: 15px;
+   	}
+ /* heading */
+   	.heading {
+   	padding-top: 15px;
+   	}
+   	.heading h1 {
+   	font-size: 20px;
+   	}
+   	.heading h1 {
+   	margin-top: 27px;
+   	margin-bottom: 27px;
+   	}
+   	/* education */
+   	.study span {
+   	font-size: 16px;
+ }
+   	.study .percentage {
+   	height: 45px;
+   	width: 45px;
+   	}
+    	/* skills */
+      .skill-cards .col-lg-4{
+     	width: 100% !important;
+   	}
+   	.skills-icon .sub-head {
+   	font-size: 16px;
+   	}
+   	.skill-cards {
+    	padding-top: 0px;
+   	}
+   	.skill-cards .media-pad {
+   	margin-top: 50px;
+   	}
+   	/* contact-back-img */
+   	.contact-details {
+   	height: 400px;
+    	}
+   	/* contact */
+ .details input {
+   	height: 30px;
+   	}
+   	.details textarea {
+   	height: 104px;
+   	}
+   	/* bottom */
+   	.bottom-text {
+   	width: 100%;
+   	margin: 0px;
+   	}
+   	.bottom .b-butn {
+    	display: flex;
+   	justify-content: end;
+ 	align-items: center;
+ 	}
+ 	}
+
 }
