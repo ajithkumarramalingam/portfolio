@@ -386,7 +386,7 @@ html {
   ##Screen = B/w 320px to 479px
 */
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
   html {
     overflow-x: hidden !important;
@@ -410,6 +410,7 @@ html {
   }
   .back-img {
     height: 590px;
+    background-size: cover;
   }
   /* back-img-text */
   .text-1 {
