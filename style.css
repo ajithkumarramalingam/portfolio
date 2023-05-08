@@ -123,9 +123,9 @@ html {
   justify-content: center;
 }
 .personal {
-  border: 2px solid red;
+  border: 2px solid teal;
   border-radius: 30px;
-  box-shadow: 2px 2px 25px 10px red;
+  box-shadow: 2px 2px 25px 10px teal;
   margin-top: 50px !important;
 }
 .info h4 {
@@ -139,10 +139,10 @@ html {
 .edu-details {
   background-color: rgb(203, 230, 84);
 }
-.edu-butn {
+/* .edu-butn {
   background-color: #e9ecef;
   border-radius: 70px;
-}
+} */
 .study span {
   font-weight: bold;
   text-decoration: underline;
@@ -300,6 +300,9 @@ html {
   justify-content: center;
   align-items: center;
 }
+.bottom-text{
+  width: 100%;
+}
 .b-butn a {
   color: black;
   border: 1px solid black;
@@ -348,6 +351,24 @@ html {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* CSS */
+  .nav-text .color-text:hover {
+    background-color: transparent !important;
+  }
+  .nav-home span {
+    width: 30px;
+    height: 30px;
+
+  }
+   .p-text {
+    order: 2;
+  }
+  .info {
+    padding: 15px;
+  }
+  .man-img {
+    order: 1;
+    padding: 15px;
+  }
 }
 
 /* 
@@ -370,6 +391,7 @@ html {
   html {
     overflow-x: hidden !important;
   }
+  /* navbar */
   .nav-home button {
     height: 38px;
     width: 55px;
@@ -381,6 +403,7 @@ html {
   .nav-text .color-text:hover {
     background-color: transparent !important;
   }
+ 
   /* background-image */
   * {
     font-size: 15px;
