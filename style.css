@@ -3,6 +3,12 @@ html {
   overflow-x: hidden;
 }
 
+.required::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}
+
 * {
   font-size: 20px;
   font-family: "Itim", cursive;
@@ -45,7 +51,7 @@ html {
 }
 
 .back-img {
-  background-image: url(img_1.jpg);
+  background-image: url(./image/img_1.jpg);
   width: 100%;
   background-position: center;
   height: 950px;
@@ -329,7 +335,7 @@ html {
 
 /* contact */
 .contact-details {
-  background-image: url(/map-image.png);
+  background-image: url(./image/map-image.png);
   background-position: center;
   background-color: darkcyan;
   background-size: contain;

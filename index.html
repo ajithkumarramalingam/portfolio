@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="human-img col-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <img src="human.png" alt="" />
+        <img src="./image/human.png" alt="" />
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@
       </div>
       <div class="col-lg-6 col-sm-12 col-md-12 man-img" data-aos="fade-down" data-aos-easing="linear"
         data-aos-duration="3000">
-        <img src="man.png" alt="" />
+        <img src="./image/man.png" alt="" />
       </div>
     </div>
 
@@ -217,16 +217,16 @@
         <p class="sub-head">BOOTSTRAP</p>
       </div>
       <div class="col-lg-4 skills-icon card ts-color media-pad mt-5" data-aos="flip-right">
-        <img class="ts-img typescript" src="./typescript-25.svg" alt="">
+        <img class="ts-img typescript" src="./image/typescript-25.svg" alt="">
         <p class="sub-head">TYPESCRIPT</p>
       </div>
       <div class="col-lg-4 skills-icon card nest-color media-pad mt-5" data-aos="flip-right">
-        <img style="height: 110px;" class="nest-img nest" src="./nextjs.svg" alt="">
+        <img style="height: 110px;" class="nest-img nest" src="./image/nextjs.svg" alt="">
         <p class="sub-head">NEST JS</p>
       </div>
       <div class="col-lg-4 skills-icon card png-color media-pad mt-5" data-aos="flip-right">
         <div style="text-align: center;">
-          <img style="height: 110px; width: 110px;" class="png-img primeng" src="./primeng.webp" alt="">
+          <img style="height: 110px; width: 110px;" class="png-img primeng" src="./image/primeng.webp" alt="">
         </div>
         <p class="sub-head">PRIMENG</p>
       </div>
@@ -243,21 +243,21 @@
         <div class="row details">
           <div class="col-lg-6 col-sm-12 col-md-6">
             <div class="mb-3">
-              <label for="name" class="form-label">
+              <label for="name" class="form-label required">
                 Your Name
               </label>
               <input type="text" id="name" class="form-control" placeholder="Enter Your Name" />
             </div>
 
             <div class="mb-3">
-              <label for="email" class="form-label">
+              <label for="email" class="form-label required">
                 Your Email
               </label>
               <input type="email" id="email" class="form-control" placeholder="Enter Your Email" />
             </div>
           </div>
           <div class="col-lg-6 col-sm-12 col-md-6 mb-3">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label required">Message</label>
             <textarea class="form-control" id="message" rows="5" placeholder="Write Something......"></textarea>
           </div>
         </div>
@@ -280,6 +280,82 @@
   </div>
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dob = new Date('2001-07-02');
+      var today = new Date();
+      var age = today.getFullYear() - dob.getFullYear();
+
+      if (today.getMonth() < dob.getMonth() || (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate())) {
+        age--;
+      }
+
+      document.getElementById('age').textContent = age;
+
+      var form = document.getElementById('myForm');
+      var submitButton = document.querySelector('.submit-butn button');
+      var nameInput = document.getElementById('name');
+      var emailInput = document.getElementById('email');
+      var messageInput = document.getElementById('message');
+
+      submitButton.disabled = true;
+
+      function isFormValid() {
+        return nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && messageInput.value.trim() !== '';
+      }
+
+      function updateSubmitButtonState() {
+        submitButton.disabled = !isFormValid();
+      }
+
+      nameInput.addEventListener('input', updateSubmitButtonState);
+      emailInput.addEventListener('input', updateSubmitButtonState);
+      messageInput.addEventListener('input', updateSubmitButtonState);
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var name = nameInput.value;
+        var email = emailInput.value;
+        var message = messageInput.value;
+
+        var body = "Name: " + name + "<br/> Email: " + email + "<br/> Message: " + message;
+
+        Email.send({
+          SecureToken: "c90a9b48-8612-464f-9b28-6af8bf8c763e",
+          To: 'ajithfin2000@gmail.com',
+          From: 'ajithfin2000@gmail.com',
+          Subject: "It's my portfolio",
+          Body: body
+        }).then(
+          function (message) {
+            alert('Message sent successfully');
+          },
+          function (error) {
+            alert('Error sending message: ' + error);
+          }
+        );
+
+        form.reset();
+        submitButton.disabled = true;
+      });
+    });
+  </script>
+
+  <!-- aos-script-link -->
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     var form = document.getElementById('myForm');
     form.addEventListener('submit', function (e) {
@@ -313,15 +389,34 @@
     });
   </script>
 
-  <!-- aos-script-link -->
   <script>
-    AOS.init();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-</body>
-</html>
+    document.addEventListener('DOMContentLoaded', function () {
+      var form = document.getElementById('myForm');
+      var submitButton = document.querySelector('.submit-butn button');
+      var nameInput = document.getElementById('name');
+      var emailInput = document.getElementById('email');
+      var messageInput = document.getElementById('message');
+
+      submitButton.disabled = true;
+
+      function isFormValid() {
+        return nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && messageInput.value.trim() !== '';
+      }
+
+      function updateSubmitButtonState() {
+        submitButton.disabled = !isFormValid();
+      }
+
+      nameInput.addEventListener('input', updateSubmitButtonState);
+      emailInput.addEventListener('input', updateSubmitButtonState);
+      messageInput.addEventListener('input', updateSubmitButtonState);
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        form.reset();
+
+        submitButton.disabled = true;
+      });
+    });
+  </script> -->
