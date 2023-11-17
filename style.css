@@ -9,6 +9,10 @@ html {
   margin-left: 5px;
 }
 
+.btn:disabled {
+  opacity: 0.2 !important;
+}
+
 * {
   font-size: 20px;
   font-family: "Itim", cursive;
